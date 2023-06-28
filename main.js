@@ -2,13 +2,14 @@ const contenedorProductos = document.querySelector(".contenedor-productos");
 const numerito = document.querySelector("#numerito");
 
 
+
 function cargarProductos() {
     let html = '';
 
     arrayProductos.forEach(producto => {
         html += `
         <div class="producto">
-            <img class="producto-imagen" src="${producto.img}" alt="" />
+            <img class="producto-imagen" src=".${producto.img}" alt="" />
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.title}</h3>
                 <p class="producto-titulo">$${producto.precio}</p>
